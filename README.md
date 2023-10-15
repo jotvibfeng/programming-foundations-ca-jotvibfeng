@@ -13,6 +13,8 @@ This object has the following properties:
 - Is a smart tv (Bolean), Tells the product is a smartTV
 - Is turned on (Bolean), Its tells us if the televison is turned on
 - Channel list (number), The number of channel on the Televison
+- Producer (object nest) showing more detail about the company how produce the televison
+- Channel (arry object) telling the name and wich channel the program is on
 
 How to use The fuction:
 
