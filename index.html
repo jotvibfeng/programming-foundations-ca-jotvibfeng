@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming Foundations CA</title>
-    <link href='css/style.css' rel='stylesheet' />
-    <link rel='icon' href='data:;base64,=' />
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-    <script src="js/script.js"></script>
-</body>
-
+  <body>
+    <div class="tv">
+      <div class="screen">
+        <div id="channel">Channel: 0</div>
+        <div id="status">Status: Off</div>
+      </div>
+      <div class="remote">
+        <button id="powerButton">Power</button>
+        <button id="channelUpButton">Channel Up</button>
+        <button id="channelDownButton">Channel Down</button>
+      </div>
+    </div>
+    <script src="js/televsion.js"></script>
+  </body>
 </html>
