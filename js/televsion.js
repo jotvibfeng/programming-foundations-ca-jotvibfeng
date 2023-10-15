@@ -78,39 +78,41 @@ televison.changeChannel(4)
 televison.changeChannel(5)
 
 //userinterface ca
-const powerButton = document.getElementById("powerButton"); //Targeting id property
-const channelUpButton = document.getElementById("channelUpButton"); //Targeting id property
-const channelDownButton = document.getElementById("channelDownButton"); //Targeting id property
-const channelDisplay = document.getElementById("channel"); //The dispaly off the channel 
-const statusDisplay = document.getElementById("status"); // The staus of wich channel it`s on
+const powerButton = document.getElementById("powerButton");
+const channelUpButton = document.getElementById("channelUpButton");
+const channelDownButton = document.getElementById("channelDownButton");
+const channelDisplay = document.getElementById("channel");
+const statusDisplay = document.getElementById("status");
 
-let isTvOn = false;
+let isTVOn = false;
 let currentChannel = 0;
 
 powerButton.addEventListener("click", () => {
-    isTvOn = !isTvOn;
-    updateStatusDispaly();
-}); 
+  isTVOn = !isTVOn;
+  updateStatusDisplay();
+});
 
 channelUpButton.addEventListener("click", () => {
-    if (isTvOn);
+  if (isTVOn) {
     currentChannel++;
-    updateStatusDispaly();
-}); 
+    updateChannelDisplay();
+  }
+});
 
 channelDownButton.addEventListener("click", () => {
-    if (isTvOn);
+  if (isTVOn) {
     currentChannel--;
-    updateStatusDispaly();
-}); 
+    updateChannelDisplay();
+  }
+});
 
-function updateStatusDispaly() {
-    channelDisplay.textContent = `channel: ${currentChannel}`;
-};
+function updateChannelDisplay() {
+  channelDisplay.textContent = `Channel: ${currentChannel}`;
+}
 
-function updateStatusDispaly() {
-    statusDisplay.textContent = isTvOn ? "Status: on" : "Status: Off";
-    channelDisplay.style.visibility = isTvOn ? "Visible" : "Hidden;"
+function updateStatusDisplay() {
+  statusDisplay.textContent = isTVOn ? "Status: On" : "Status: Off";
+  channelDisplay.style.visibility = isTVOn ? "visible" : "hidden";
 }
 
 console.dir(powerButton);
