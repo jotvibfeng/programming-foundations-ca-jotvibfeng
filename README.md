@@ -13,3 +13,15 @@ This object has the following properties:
 - Is a smart tv (Bolean), Tells the product is a smartTV
 - Is turned on (Bolean), Its tells us if the televison is turned on
 - Channel list (number), The number of channel on the Televison
+
+How to use The fuction:
+
+- turnOn fuction turnes the tv on to clearfy that it has been turned on.
+- turnOff fuction turnes the tv off to clearfy that it has been turned off.
+- changeChannel fuction is clearfying wich channel you are on now.
+- dir fuction onClick testing if the button works as it should.
+- updateStatusDispaly is targeting the buttons fuction to change if its on/off and wich channel your on.
+
+others:
+
+- getElementById is targets the id that I createted on HTML pages that gives us the abilite to make the button workable.
